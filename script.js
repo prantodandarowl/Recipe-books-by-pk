@@ -20,6 +20,7 @@ function getMealList(){
         let html = "";
         if(data.meals){
             data.meals.forEach(meal => {
+                // console.log(meal)
                 html += `
                     <div class = "meal-item" data-id = "${meal.idMeal}">
                         <div class = "meal-img">
@@ -56,7 +57,7 @@ function getMealRecipe(e){
 
 // create a modal
 function mealRecipeModal(meal){
-    console.log(meal);
+    // console.log(meal);
     meal = meal[0];
     let html = `
         <h2 class = "recipe-title">${meal.strMeal}</h2>
